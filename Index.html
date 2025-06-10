@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="IndexEstilo.css">
+    <script src="IndexFuncoes.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Painel de controle organizacional</title>
+</head>
+
+<body>
+        <div id="intro">
+        <H1>Opa, E ai?</H1>
+    <br>
+
+        <p>Seja bem vindo ao seu primeiro web painel de controle de organização, espero não esta sendo chato, mas é importante esclarecer um pouco algumas coisas antes de prosseguir. Como dito anteriormente, esta aplicação foi criada com o proposito de auxiliar em suas produtividades, por isso, anote oque é necessario e sinta-se a vontade usar o calendario para não perder eventos e entregas importantes! Enfim, espero que seja util, bom trabalho!</p>
+    <br>
+        
+        <button id="botao" onmouseenter="mouseEntrarBotao()" onmouseleave="mouseSairBotao()" onclick="mouseUmCliqueProximo()">Clique aqui para começar!</button>
+    </div>
+
+        <div id="tarefas">
+    <h1>LISTA DE TAREFAS:</h1>
+    <h3>Adicione aqui:</h3>
+    
+    <input type="text" id="novaTarefa" placeholder="Digite sua tarefa e pressione Enter">
+
+    <ul id="listaTarefas"></ul>
+    </div>
+</body>
+
+</html>
