@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="IndexEstilo.css">
-    <script src="IndexFuncoes.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="IndexFuncoes.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Painel de controle organizacional</title>
 </head>
@@ -22,12 +22,21 @@
     </div>
 
         <div id="tarefas">
-    <h1>LISTA DE TAREFAS:</h1>
-    <h3>Adicione aqui:</h3>
+    <h1>CONOGRAMA DE TAREFAS:</h1>
+    <h3>Lista de tarefas: </h3>
     
-    <input type="text" id="novaTarefa" placeholder="Digite sua tarefa e pressione Enter">
+    <textarea id="listagemTarefa" placeholder="Pressione Enter para adicionar..." onkeydown="AdicionarTarefa(event)"></textarea>
 
     <ul id="listaTarefas"></ul>
+    
+    <hr>
+    <button id="verHistorico">Ver histórico</button>
+
+    <div id="historicoTarefas" style="display: none;">
+        <h3>Tarefas concluídas:</h3>
+        <ul id="listaHistorico"></ul>
+    </div>
+    
     </div>
 </body>
 
