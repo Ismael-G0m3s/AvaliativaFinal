@@ -152,19 +152,3 @@ hr {
     background: #f0f0f0;
     border: 1px solid #ccc;
 }
-
-#botoesHistorico button {
-    margin: 5px;
-    padding: 6px 16px;
-    border: 1px solid black;
-    border-radius: 6px;
-    background: white;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 13px;
-}
-
-#botoesHistorico button:hover {
-    background: black;
-    color: white;
-}

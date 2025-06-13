@@ -42,7 +42,6 @@ function AdicionarTarefa(event) {
             
             btnConcluir.className = "botao-concluir";
             btnConcluir.textContent = "Concluir";
-            
             btnConcluir.onclick = function () {
                 conteudo.style.textDecoration = "line-through";
                 conteudo.style.opacity = "0.6";
@@ -51,7 +50,6 @@ function AdicionarTarefa(event) {
             const btnExcluir = document.createElement("button");
             btnExcluir.className = "botao-excluir";
             btnExcluir.textContent = "Excluir";
-            
             btnExcluir.onclick = function () {
                 item.remove();
             };
